@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="163.0" prefWidth="234.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.memorychart.controller.HomeController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="27.0" prefWidth="114.0" text="Size of static space" textAlignment="CENTER" />
+      <JFXTextField fx:id="textFieldSize" layoutX="61.0" layoutY="57.0" prefHeight="25.0" prefWidth="114.0" promptText="Size" />
+      <JFXButton fx:id="buttonNext" layoutX="98.0" layoutY="102.0" onMouseClicked="#buttonNextOnClicked" text="Next" />
+      <Label layoutX="147.0" layoutY="57.0" prefHeight="25.0" prefWidth="34.0" text="MB" />
+   </children>
+</AnchorPane>

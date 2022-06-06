@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" onMouseMoved="#anchorPaneOnMoved" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.memorychart.controller.HelloController">
+    <PieChart fx:id="chart" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="468.0" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="172.0" AnchorPane.topAnchor="5.0" />
+    <VBox alignment="CENTER" layoutX="500.0" layoutY="162.0" prefHeight="194.0" prefWidth="140.0" spacing="10" styleClass="vbox" stylesheets="@style/chartStyle.css" AnchorPane.bottomAnchor="157.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="162.0">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+        <children>
+            <Label alignment="CENTER" text="Add Item" textAlignment="CENTER">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+            <JFXTextField fx:id="textFieldName" promptText="Name" />
+         <HBox prefHeight="30.0" prefWidth="110.0">
+            <children>
+                  <JFXTextField fx:id="textFieldSize" prefHeight="25.0" prefWidth="80.0" promptText="Size" />
+               <Label text="MB">
+                  <padding>
+                     <Insets top="5.0" />
+                  </padding>
+               </Label>
+            </children>
+         </HBox>
+            <JFXButton fx:id="buttonAddItem" onMouseClicked="#addItem" styleClass="buttonAdd" text="Add Item" />
+        </children>
+    </VBox>
+    <VBox alignment="CENTER" layoutX="500.0" prefHeight="129.0" prefWidth="140.0" spacing="10.0" styleClass="vbox" stylesheets="@style/chartStyle.css" AnchorPane.bottomAnchor="371.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+        <children>
+            <Label alignment="CENTER" prefHeight="25.0" prefWidth="140.0" text="Items" textAlignment="CENTER" />
+            <ChoiceBox fx:id="choiceBox" prefHeight="25.0" prefWidth="140.0" />
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                  <JFXTextField fx:id="textFieldSizeOfDeletingItem" prefHeight="25.0" prefWidth="80.0" promptText="Size" />
+               <Label text="MB">
+                  <padding>
+                     <Insets top="5.0" />
+                  </padding>
+               </Label>
+            </children>
+         </HBox>
+            <JFXButton fx:id="buttonDeleteItem" onMouseClicked="#deleteItem" styleClass="buttonDelete" text="Delete Item" />
+        </children>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </VBox>
+    <VBox alignment="CENTER" layoutX="500.0" layoutY="376.0" prefHeight="142.0" prefWidth="140.0" spacing="10.0" styleClass="vbox" stylesheets="@style/chartStyle.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="376.0">
+        <children>
+            <Label text="Statistika" />
+            <Label fx:id="inputData" text="Qo`shilgan: 0" />
+            <Label fx:id="deleteData" text="O`chirilgan: 0" />
+         <Label fx:id="notAvailable" text="Band hajm: 0" />
+        </children>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </VBox>
+
+</AnchorPane>

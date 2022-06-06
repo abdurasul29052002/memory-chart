@@ -1,0 +1,20 @@
+.vbox:hover {
+    -fx-border-color: #173cd2;
+    -fx-background-color: #00ff9d;
+}
+
+.vbox{
+    -fx-border-radius: 5;
+    -fx-background-radius: 10;
+    -fx-border-width: 5;
+    -fx-border-color: #7d3be3;
+}
+
+.buttonAdd{
+    -fx-background-color: #4eef4e;
+}
+
+.buttonDelete {
+    -fx-background-color: red;
+    -fx-text-fill: white
+}
