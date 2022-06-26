@@ -1,25 +1,19 @@
 package com.example.memorychart;
 
-import com.example.memorychart.controller.HelloController;
-import com.example.memorychart.model.Data;
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextField;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
-import javafx.scene.control.Label;
-import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-
-import java.io.IOException;
+import lombok.SneakyThrows;
 
 public class ChartApplication extends Application {
     public static Stage staticStage;
 
+    @SneakyThrows
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) {
         Thread.setDefaultUncaughtExceptionHandler(ChartApplication::showErrorDialog);
         stage.setResizable(false);
         staticStage = stage;
